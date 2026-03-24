@@ -1,0 +1,225 @@
+.members-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #1f355e;
+  margin-bottom: 60px;
+}
+
+.board {
+  margin-bottom: 80px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.group-block {
+  margin-bottom: 90px;
+}
+
+.group-block h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1f355e;
+  margin-bottom: 30px;
+}
+
+.member img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #1f355e;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.member img:hover {
+  transform: scale(1.07);
+}
+
+.member.big img {
+  width: 180px;
+  height: 180px;
+}
+
+.role {
+  color: #a43d3d;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.name, .member p {
+  color: #1f355e;
+  margin-top: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 35px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+.leader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.leader img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 4px solid #1f355e;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.leader img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.member img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #1f355e;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.members-page {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  text-align: center;
+  background: transparent;
+}
+
+/* 👇 thêm overlay riêng */
+.members-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25); /* chỉnh độ mờ tại đây */
+  z-index: -1;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Times New Roman", serif;
+  background: url("background.jpg") center / cover no-repeat fixed;
+}
+
+.members-page {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  text-align: center;
+  background: transparent;
+}
+.footer {
+  background-color: #1f2553; /* 👉 đổi màu tại đây */
+  color: white;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.thank-text {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer input,
+.footer textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer button {
+  padding: 6px 12px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background: #ddd;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+/* ===== Làm chữ rõ hơn trên nền ảnh ===== */
+.members-page h1,
+.members-page h2,
+.members-page .name {
+  color: #1f355e;
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.members-page .role {
+  color: #8b1e1e;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
